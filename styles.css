@@ -20,5 +20,8 @@ html, body {
 }
 
 .vfrc-message--chat {
-    width: 80% !important;
+    width: 90% !important; /* Makes the bubbles wider */
+    padding: 12px 20px !important; /* Adds more space inside the bubbles */
+    font-size: 1.1em !important; /* Increases the text size */
+    margin-bottom: 12px !important; /* Adds more space between messages */
 }
