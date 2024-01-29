@@ -43,7 +43,7 @@ html, body {
 /* Adjust the chat bubbles to occupy only 30% of the chat interface width */
 .vfrc-chat--dialog > .vfrc-user-response .vfrc-message,
 .vfrc-chat--dialog > .vfrc-system-response .vfrc-message {
-    width: 30% !important; /* Set the width of the chat bubbles to 30% */
+    width: 80% !important; /* Set the width of the chat bubbles to 30% */
     word-wrap: break-word !important; /* Ensure long words do not overflow */
     white-space: normal !important; /* Override any other white-space settings that prevent wrapping */
     overflow-wrap: break-word !important; /* Break words to prevent overflow */
