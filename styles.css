@@ -27,23 +27,12 @@ html, body {
     /* Add any additional styling you want here, like background-color, border-radius, etc. */
 }
 
-.vfrc-system-response .vfrc-message {
-    width: 90% !important; /* Adjust width as needed */
-    padding: 12px 20px !important; /* More padding for larger bubble size */
-    font-size: 1.1em !important; /* Increase font size if needed */
-    margin-bottom: 10px !important; /* Space between messages */
-    /* Add any additional styling you want here, like background-color, border-radius, etc. */
-}
 
-/* Reducing the padding inside the chat container */
-.vfrc-chat--dialog {
-    padding: 10px !important; /* Reduce the current padding value by about half or to what looks good */
-}
 
 /* Adjust the chat bubbles to occupy only 30% of the chat interface width */
 .vfrc-chat--dialog > .vfrc-user-response .vfrc-message,
 .vfrc-chat--dialog > .vfrc-system-response .vfrc-message {
-    max-width: 40%; /* Set the max-width to 40% of the chat dialog */
+    max-width: 60%; /* Set the max-width to 40% of the chat dialog */
     word-break: normal; /* Prevents breaking words */
     white-space: normal; /* Ensures text wraps in the bubble */
     overflow-wrap: normal; /* Allows long words to wrap at the next line */
