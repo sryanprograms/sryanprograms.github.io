@@ -1,3 +1,4 @@
+/* Fullscreen and overflow adjustments */
 html, body {
     margin: 0;
     padding: 0;
@@ -6,19 +7,46 @@ html, body {
     overflow: hidden;
 }
 
+/* Fullscreen chat widget */
 .vfrc-widget--chat {
     position: fixed !important;
     top: 0 !important;
     left: 0 !important;
     right: 0 !important;
     bottom: 0 !important;
-    width: 100% !important;
-    height: 100% !important;
+    width: 80% !important;
+    height: 80% !important;
     border: none !important;
     max-width: none !important;
     max-height: none !important;
 }
 
-.vfrc-message--chat {
-    width: 80% !important;
+/* Styling for assistant and user chat messages */
+.vfrc-message {
+    width: auto !important; /* Auto-width based on content */
+    max-width: 50% !important; /* Maximum width of the bubble */
+    padding: 12px 20px !important; /* Increased padding for a larger appearance */
+    font-size: 18px !important; /* Increased font size for better readability */
+    margin: 8px auto !important; /* Centered margin for aesthetic spacing */
+    display: flex !important; /* Use flexbox for better control of the layout */
+    justify-content: flex-end !important; /* Maintain alignment for the user's messages */
+    box-sizing: border-box !important; /* Include padding and border in the width and height */
+    word-wrap: break-word !important; /* Ensure text wraps within the bubble */
+}
+
+/* Styling adjustments for medium screens */
+@media screen and (max-width: 768px) {
+    .vfrc-message {
+        max-width: 70% !important; /* Increase max width on smaller screens */
+        font-size: 16px !important; /* Adjust font size for smaller screens */
+    }
+}
+
+/* Styling adjustments for very small screens */
+@media screen and (max-width: 480px) {
+    .vfrc-message {
+        max-width: 100% !important; /* Full width chat bubbles on very small screens */
+        font-size: 14px !important; /* Smaller font size for very small screens */
+        padding: 8px 16px !important; /* Smaller padding for very small screens */
+    }
 }
