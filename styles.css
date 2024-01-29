@@ -22,16 +22,14 @@ html, body {
 /* Adjust the individual chat messages */
 .vfrc-chat--dialog > .vfrc-user-response .vfrc-message,
 .vfrc-chat--dialog > .vfrc-system-response .vfrc-message {
-    max-width: 40% !important; /* Ensure bubbles do not exceed 40% width */
-    padding: 12px 20px !important; /* Adjust padding for larger bubble size */
-    font-size: 1.1em !important; /* Increase font size if needed */
-    margin-bottom: 10px !important; /* Consistent space between messages */
-    word-break: break-word; /* Allow long words to break and wrap onto the next line */
-    white-space: normal !important; /* Ensure text wraps only at the end of the bubble */
-    overflow-wrap: break-word !important; /* Breaks the word at the end of the bubble if it's too long */
-}
-
-/* Adjust the chat container padding if needed */
-.vfrc-chat--dialog {
-    padding: 10px !important; /* Adjust the padding inside the chat container */
+    max-width: 40% !important; /* Maximum width to the center of the chat interface */
+    width: max-content !important; /* Set width to the content size */
+    min-width: 0 !important; /* Allow the width to shrink to fit smaller content */
+    padding: 12px 20px !important; 
+    font-size: 1.1em !important;
+    margin-bottom: 10px !important;
+    word-break: break-word; 
+    white-space: normal !important; 
+    overflow-wrap: break-word !important; 
+    text-overflow: ellipsis; /* Ensures text doesn't overflow bubble */
 }
