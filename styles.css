@@ -19,31 +19,19 @@ html, body {
     max-height: none !important;
 }
 
-.vfrc-user-response .vfrc-message {
-    width: 90% !important; /* Adjust width as needed */
-    padding: 12px 20px !important; /* More padding for larger bubble size */
-    font-size: 1.1em !important; /* Increase font size if needed */
-    margin-bottom: 10px !important; /* Space between messages */
-    /* Add any additional styling you want here, like background-color, border-radius, etc. */
-}
-
+/* Adjust the individual chat messages */
 .vfrc-chat--dialog > .vfrc-user-response .vfrc-message,
 .vfrc-chat--dialog > .vfrc-system-response .vfrc-message {
-    width: 60% !important; /* Adjust width as needed */
-    padding: 12px 20px !important; /* More padding for larger bubble size */
+    max-width: 40% !important; /* Ensure bubbles do not exceed 40% width */
+    padding: 12px 20px !important; /* Adjust padding for larger bubble size */
     font-size: 1.1em !important; /* Increase font size if needed */
-    margin-bottom: 10px !important; /* Space between messages */
-    /* Add any additional styling you want here, like background-color, border-radius, etc. */
-    word-break: normal; /* Prevents breaking words */
-    white-space: normal; /* Ensures text wraps in the bubble */
-    overflow-wrap: normal; /* Allows long words to wrap at the next line */
-    margin-bottom: 10px; /* Space between messages */
+    margin-bottom: 10px !important; /* Consistent space between messages */
+    word-break: break-word; /* Allow long words to break and wrap onto the next line */
+    white-space: normal !important; /* Ensure text wraps only at the end of the bubble */
+    overflow-wrap: break-word !important; /* Breaks the word at the end of the bubble if it's too long */
 }
 
-/* Reducing the padding inside the chat container */
+/* Adjust the chat container padding if needed */
 .vfrc-chat--dialog {
-    padding: 10px !important; /* Reduce the current padding value by about half or to what looks good */
+    padding: 10px !important; /* Adjust the padding inside the chat container */
 }
-
-
-
