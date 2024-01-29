@@ -40,13 +40,12 @@ html, body {
     padding: 10px !important; /* Reduce the current padding value by about half or to what looks good */
 }
 
-/* Adjust the chat bubbles to be larger now that there is more space */
+/* Adjust the chat bubbles to occupy only 30% of the chat interface width */
 .vfrc-chat--dialog > .vfrc-user-response .vfrc-message,
 .vfrc-chat--dialog > .vfrc-system-response .vfrc-message {
-    max-width: none !important; /* Remove any max-width if set */
-    width: calc(100% - 20px) !important; /* Adjust width, subtract the total horizontal padding */
-    padding: 8px 16px !important; /* Adjust padding inside the chat bubbles if needed */
-    font-size: 1em !important; /* Adjust font size if needed */
-    margin-bottom: 8px !important; /* Adjust spacing between messages */
-    /* Any additional styling for the bubbles */
+    width: 30% !important; /* Set the width of the chat bubbles to 30% */
+    word-wrap: break-word !important; /* Ensure long words do not overflow */
+    white-space: normal !important; /* Override any other white-space settings that prevent wrapping */
+    overflow-wrap: break-word !important; /* Break words to prevent overflow */
+    hyphens: auto !important; /* Automatically add hyphens when breaking words */
 }
