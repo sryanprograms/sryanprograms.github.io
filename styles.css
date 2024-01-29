@@ -1,4 +1,4 @@
-#vfchatframe {
+.vfrc {
     width: 80%; /* 80% of the screen */
     height: auto; /* Adjust height as needed */
     position: fixed; /* or absolute, depending on your layout */
@@ -10,7 +10,7 @@
 }
 
 @media screen and (max-width: 1024px) {
-    #vfchatframe {
+    .vfrc {
         width: 100%; /* Full width of the screen */
         height: 100vh; /* Full height of the viewport */
         position: fixed; /* or absolute */
