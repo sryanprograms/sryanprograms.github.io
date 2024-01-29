@@ -34,3 +34,19 @@ html, body {
     margin-bottom: 10px !important; /* Space between messages */
     /* Add any additional styling you want here, like background-color, border-radius, etc. */
 }
+
+/* Reducing the padding inside the chat container */
+.vfrc-chat--dialog {
+    padding: 10px !important; /* Reduce the current padding value by about half or to what looks good */
+}
+
+/* Adjust the chat bubbles to be larger now that there is more space */
+.vfrc-chat--dialog > .vfrc-user-response .vfrc-message,
+.vfrc-chat--dialog > .vfrc-system-response .vfrc-message {
+    max-width: none !important; /* Remove any max-width if set */
+    width: calc(100% - 20px) !important; /* Adjust width, subtract the total horizontal padding */
+    padding: 8px 16px !important; /* Adjust padding inside the chat bubbles if needed */
+    font-size: 1em !important; /* Adjust font size if needed */
+    margin-bottom: 8px !important; /* Adjust spacing between messages */
+    /* Any additional styling for the bubbles */
+}
