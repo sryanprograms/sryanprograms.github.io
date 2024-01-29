@@ -1,0 +1,21 @@
+#vfchatframe {
+    width: 80%; /* 80% of the screen */
+    height: auto; /* Adjust height as needed */
+    position: fixed; /* or absolute, depending on your layout */
+    left: 10%; /* Centering the chatbot */
+    right: 10%; /* Centering the chatbot */
+    top: 0;
+    bottom: 0;
+    border: none; /* Optional: removes border */
+}
+
+@media screen and (max-width: 1024px) {
+    #vfchatframe {
+        width: 100%; /* Full width of the screen */
+        height: 100vh; /* Full height of the viewport */
+        position: fixed; /* or absolute */
+        left: 0;
+        top: 0;
+        border: none; /* Optional */
+    }
+}
