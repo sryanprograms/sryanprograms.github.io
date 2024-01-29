@@ -1,24 +1,23 @@
-/* Fullscreen and overflow adjustments */
 html, body {
     margin: 0;
     padding: 0;
     height: 100%;
     width: 100%;
-    display: flex; /* Enable flexbox layout */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
     overflow: hidden;
 }
 
-/* Center the chat widget */
+/* Fullscreen chat widget */
 .vfrc-widget--chat {
     position: fixed !important;
-    width: 80% !important; /* Set the width to 80% of the viewport */
-    height: 80% !important; /* Set the height to 80% of the viewport */
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: 80% !important;
+    height: 80% !important;
     border: none !important;
     max-width: none !important;
     max-height: none !important;
-    /* Remove the top, left, right, and bottom properties */
 }
 
 /* Styling for chat messages */
