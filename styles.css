@@ -19,9 +19,18 @@ html, body {
     max-height: none !important;
 }
 
-.vfrc-message--chat {
-    width: 90% !important; /* Makes the bubbles wider */
-    padding: 12px 20px !important; /* Adds more space inside the bubbles */
-    font-size: 1.1em !important; /* Increases the text size */
-    margin-bottom: 12px !important; /* Adds more space between messages */
+.vfrc-user-response .vfrc-message {
+    width: 90% !important; /* Adjust width as needed */
+    padding: 12px 20px !important; /* More padding for larger bubble size */
+    font-size: 1.1em !important; /* Increase font size if needed */
+    margin-bottom: 10px !important; /* Space between messages */
+    /* Add any additional styling you want here, like background-color, border-radius, etc. */
+}
+
+.vfrc-system-response .vfrc-message {
+    width: 90% !important; /* Adjust width as needed */
+    padding: 12px 20px !important; /* More padding for larger bubble size */
+    font-size: 1.1em !important; /* Increase font size if needed */
+    margin-bottom: 10px !important; /* Space between messages */
+    /* Add any additional styling you want here, like background-color, border-radius, etc. */
 }
