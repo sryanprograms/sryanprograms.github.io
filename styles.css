@@ -22,7 +22,7 @@ html, body {
 /* Adjust the individual chat messages */
 .vfrc-chat--dialog > .vfrc-user-response .vfrc-message,
 .vfrc-chat--dialog > .vfrc-system-response .vfrc-message {
-    max-width: 50% !important; /* Adjusted to be similar to .imessage p */
+    max-width: 30% !important; /* Adjusted to be similar to .imessage p */
     width: fit-content !important; /* Adjust width to content size */
     min-width: 0 !important; /* Allow width to shrink */
     padding: 0.5rem 0.875rem !important; /* Adjust padding for internal spacing */
