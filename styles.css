@@ -19,18 +19,6 @@ html, body {
     max-height: none !important;
 }
 
-/* Adjust the individual chat messages */
-.vfrc-chat--dialog > .vfrc-user-response .vfrc-message,
-.vfrc-chat--dialog > .vfrc-system-response .vfrc-message {
-    max-width: 30% !important; /* Adjusted to be similar to .imessage p */
-    width: fit-content !important; /* Adjust width to content size */
-    min-width: 0 !important; /* Allow width to shrink */
-    padding: 0.5rem 0.875rem !important; /* Adjust padding for internal spacing */
-    font-size: 1.1em !important;
-    margin-bottom: 10px !important;
-    white-space: normal !important;
-    overflow-wrap: anywhere !important; 
-    text-overflow: ellipsis; /* Handle overflowing text */
-    display: inline-block !important;
-    box-sizing: border-box !important;
+.vfrc-message--chat {
+    width: 80% !important;
 }
