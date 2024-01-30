@@ -28,8 +28,9 @@ html, body {
     padding: 0.5rem 0.875rem !important; /* Adjust padding for internal spacing */
     font-size: 1.1em !important;
     margin-bottom: 10px !important;
-    word-break: break-word;
     white-space: normal !important;
-    overflow-wrap: break-word !important;
+    overflow-wrap: anywhere !important; 
     text-overflow: ellipsis; /* Handle overflowing text */
+    display: inline-block !important;
+    box-sizing: border-box !important;
 }
